@@ -1,0 +1,45 @@
+.footer{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(219, 219, 219);
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+}
+
+.footer .footer-top{
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    justify-content: space-evenly
+    ;
+}
+
+h3{
+    color: green;
+}
+a{
+    color: rgb(167, 167, 167);
+    margin: 5px;
+    margin-left: 0;
+}
+
+
+.pages, .categories, .partners{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer .footer-bottom{
+    text-align: center;
+    margin-top: 40px;
+    opacity: .5;
+}
+
+.logo-footer{
+    color: green;
+    font-size: 25px;
+    opacity: .6;
+}

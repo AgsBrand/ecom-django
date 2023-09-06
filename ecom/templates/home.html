@@ -1,0 +1,109 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %} Home - AgsStore {% endblock %}
+
+<!-- Stylesheet  -->
+{% block csslinks %}
+<link rel="stylesheet" href="{% static 'home.css' %}">
+{% endblock %}
+
+<!-- Main content starting from here  -->
+{% block content %}
+<!-- heroes section starting from here  -->
+
+<section class="home-top">
+    <div class="carousel">
+        <div id="carousel">
+
+            <!-- <img src="https://picsum.photos/id/237/1000/500" alt="" class="slide active-slide">
+                <img src="https://picsum.photos/id/238/1000/500" alt="" class="slide">
+                <img src="https://picsum.photos/id/239/1000/500" alt="" class="slide">
+                <img src="https://picsum.photos/id/231/1000/500" alt="" class="slide">
+                <img src="https://picsum.photos/id/232/1000/500" alt="" class="slide">
+                <img src="https://picsum.photos/id/233/1000/500" alt="" class="slide"> -->
+
+        </div>
+        <!-- Next and previous buttons for carousel  -->
+        <div class="home-top-buttons">
+            <button onclick="goPrevSlide()"><i class="fa-solid fa-circle-arrow-left"></i></button>
+            <button onclick="goNextSlide()"><i class="fa-solid fa-circle-arrow-right"></i></button>
+        </div>
+    </div>
+</section>
+
+<section class="home-categories">
+    <div class="home-category">
+        <div class="title">
+            <h1>Electronics</h1>
+        </div>
+        <a class="home-category-image">
+            <img src="{% static 'images/electronics.jpg' %}" alt="">
+        </a>
+        <a class="category-bottom" href="/electronics">
+            See more
+        </a>
+    </div>
+
+    <div class="home-category">
+        <div class="title">
+            <h1>Health and care</h1>
+        </div>
+        <a class="home-category-image">
+            <img src="{% static 'images/health_and_care.jpg' %}" alt="">
+        </a>
+        <a class="category-bottom" href="/electronics">
+            See more
+        </a>
+    </div>
+    <div class="home-category">
+        <div class="title">
+            <h1>Home and kitchen</h1>
+        </div>
+        <a class="home-category-image">
+            <img src="{% static 'images/home_and_kitchen.jpg' %}" alt="">
+        </a>
+        <a class="category-bottom" href="/electronics">
+            See more
+        </a>
+    </div>
+    <div class="home-category">
+        <div class="title">
+            <h1>Top deals</h1>
+        </div>
+        <a class="home-category-image">
+            <img src="{% static 'images/top_deals.jpg' %}" alt="">
+        </a>
+        <a class="category-bottom" href="/electronics">
+            See more
+        </a>
+    </div>
+    <div class="home-category">
+        <div class="title">
+            <h1>Shop school essentials</h1>
+        </div>
+        <a class="home-category-image">
+            <img src="{% static 'images/shop_school_essentials.jpg' %}" alt="">
+        </a>
+        <a class="category-bottom" href="/electronics">
+            See more
+        </a>
+    </div>
+    <div class="home-category">
+        <div class="title">
+            <h1>Toys under 30$</h1>
+        </div>
+        <a class="home-category-image">
+            <img src="{% static 'images/toys_under_30.jpg' %}" alt="">
+        </a>
+        <a class="category-bottom" href="/electronics">
+            See more
+        </a>
+    </div>
+</section>
+
+{% endblock %}
+
+{% block jsscripts %}
+<script src="{% static 'js/home.js' %}"></script>
+{% endblock %}

@@ -1,0 +1,27 @@
+<div class="navbar">
+    <div class="navbar-top">
+        <div class="navbar-top--heading">
+            <h3>New awesome deals are available</h1>
+        </div>
+    </div>
+    <div class="navbar-main">
+        <div class="logo">
+            <h1>AgsStore</h1>
+        </div>
+        <div class="navbar-main--menu">
+            <ul>
+                <li class="{% if request.path == '/' %} active-menu {%endif%}"><a href="/">Home</a></li>
+                <li class="{% if request.path == '/new-arrival/' %} active-menu {%endif%}"><a href="/new-arrival">New
+                        arrival</a></li>
+                <li class="{% if request.path == '/tech/' %} active-menu {%endif%}"><a href="/tech">Tech</a></li>
+                <li class="{% if request.path == '/shirts/' %} active-menu {%endif%}"><a href="/shirts">Shirts</a></li>
+                <li class="{% if request.path == '/trousers/' %} active-menu {%endif%}"><a href="/trousers">Trousers</a>
+                </li>
+            </ul>
+        </div>
+        <div class="search">
+            <input type="text" placeholder="Search anything..." name="searchInput">
+            <button class="btn" type="submit">Search</button>
+        </div>
+    </div>
+</div>
