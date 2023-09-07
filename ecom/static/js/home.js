@@ -50,7 +50,20 @@ const changeSlide = (goTo) => {
 
 
 setInterval(() => {
-    document.body.onload(changeSlide(currentSlide+1)) 
+    document.body.onload(changeSlide(currentSlide + 1))
 }, 4000);
 
 
+
+
+
+
+
+
+
+
+
+
+
+// Product data 
+// "[{\"model\": \"products.product\", \"pk\": 1, \"fields\": {\"price\": 0, \"title\": \"first product\", \"desc\": \"This is the first product i am uploading\", \"category\": \"General\", \"availability\": \"Available\", \"pub_date\": \"2023-09-06T13:02:23Z\", \"product_img\": \"products/236-1000x500.jpg\"}}]"
