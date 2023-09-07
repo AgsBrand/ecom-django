@@ -32,7 +32,7 @@ def get_products(request, product_category):
 
 # Detail page of product url = domain.com/product/<id>
 def product_detail(request, product_id):
-    data = Product.objects.filter(pk = product_id)
+    data = Product.objects.get(pk = product_id)
     return render(request, 'product_detail_page.html', {"data": data})
 
 

@@ -1,1 +1,36 @@
-Hello this is working just fine
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %} {{data.title}} - AgsStore {% endblock %}
+
+<!-- Stylesheet  -->
+{% block csslinks %}
+<link rel="stylesheet" href="{% static 'product_detail_page.css' %}">
+{% endblock %}
+
+<!-- Main content starting from here  -->
+{% block content %}
+<div class="main-content-detail-page">
+    <div class="detail-sections">
+        <div class="product-detail-top">
+            <div class="product-detail-img">
+                <img src="/media/{{data.product_img}}" alt="Product image">
+            </div>
+            <div class="product-detail-other">
+                <h1 class="product-detail-title">
+                    {{data.title}}
+                </h1>
+                <h1 class="product-detail-price">Only {{data.price}}$</h1>
+                <p class="product-detail-shipping">Shipping fee: 110$</p>
+            </div>
+        </div>
+        <div class="product-detail-bottom">
+            <p>{{data.desc}}</p>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block jsscripts %}
+<script src="{% static 'js/product_detail_page.js' %}"></script>
+{% endblock %}
